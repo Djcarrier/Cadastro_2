@@ -8,3 +8,14 @@ C:\Users\DB\Desktop\Curso progração C#\Projetos\Cadastro\Cadastro_2\Cadastro_2
 C:\Users\DB\Desktop\Curso progração C#\Projetos\Cadastro\Cadastro_2\Cadastro_2\obj\Debug\Cadastro_2.csproj.CoreCompileInputs.cache
 C:\Users\DB\Desktop\Curso progração C#\Projetos\Cadastro\Cadastro_2\Cadastro_2\obj\Debug\Cadastro_2.exe
 C:\Users\DB\Desktop\Curso progração C#\Projetos\Cadastro\Cadastro_2\Cadastro_2\obj\Debug\Cadastro_2.pdb
+C:\Users\DB\Desktop\Cadastro_2\bin\Debug\Cadastro_2.exe.config
+C:\Users\DB\Desktop\Cadastro_2\bin\Debug\Cadastro_2.exe
+C:\Users\DB\Desktop\Cadastro_2\bin\Debug\Cadastro_2.pdb
+C:\Users\DB\Desktop\Cadastro_2\obj\Debug\Cadastro_2.csproj.AssemblyReference.cache
+C:\Users\DB\Desktop\Cadastro_2\obj\Debug\Cadastro_2.exe.config
+C:\Users\DB\Desktop\Cadastro_2\obj\Debug\Cadastro_2.Frm_cadastro.resources
+C:\Users\DB\Desktop\Cadastro_2\obj\Debug\Cadastro_2.Properties.Resources.resources
+C:\Users\DB\Desktop\Cadastro_2\obj\Debug\Cadastro_2.csproj.GenerateResource.cache
+C:\Users\DB\Desktop\Cadastro_2\obj\Debug\Cadastro_2.csproj.CoreCompileInputs.cache
+C:\Users\DB\Desktop\Cadastro_2\obj\Debug\Cadastro_2.exe
+C:\Users\DB\Desktop\Cadastro_2\obj\Debug\Cadastro_2.pdb

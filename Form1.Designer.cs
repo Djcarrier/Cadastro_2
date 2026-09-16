@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_cadastro));
             this.Lbl_Nome = new System.Windows.Forms.Label();
             this.Lbl_Sobrenome = new System.Windows.Forms.Label();
             this.Lbl_Idade = new System.Windows.Forms.Label();
@@ -38,20 +39,33 @@
             this.Txt_Sobrenome = new System.Windows.Forms.TextBox();
             this.Txt_Idade = new System.Windows.Forms.TextBox();
             this.Txt_Bairro = new System.Windows.Forms.TextBox();
-            this.Txt_Cellular = new System.Windows.Forms.TextBox();
-            this.Txt_Conf_Dados = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.Txt_Celular = new System.Windows.Forms.TextBox();
+            this.Txt_Email = new System.Windows.Forms.TextBox();
+            this.Btn_Nome = new System.Windows.Forms.Button();
+            this.Btn_Sobrenome = new System.Windows.Forms.Button();
+            this.Btn_Idade = new System.Windows.Forms.Button();
+            this.Btn_Bairro = new System.Windows.Forms.Button();
+            this.Btn_Celular = new System.Windows.Forms.Button();
+            this.Btn_D_Completos = new System.Windows.Forms.Button();
+            this.Lbl_Cadastro_Pessoal = new System.Windows.Forms.Label();
+            this.Grp_Temas = new System.Windows.Forms.GroupBox();
+            this.Rad_tema1 = new System.Windows.Forms.RadioButton();
+            this.Rad_Tema2 = new System.Windows.Forms.RadioButton();
+            this.Rad_Tema3 = new System.Windows.Forms.RadioButton();
+            this.Btn_Ativar = new System.Windows.Forms.Button();
+            this.Btn_Deastivar = new System.Windows.Forms.Button();
+            this.Btn_Limpar = new System.Windows.Forms.Button();
+            this.Lbl_Email = new System.Windows.Forms.Label();
+            this.btn_Email = new System.Windows.Forms.Button();
+            this.Lbl_Resultado = new System.Windows.Forms.Label();
+            this.Grp_Temas.SuspendLayout();
             this.SuspendLayout();
             // 
             // Lbl_Nome
             // 
             this.Lbl_Nome.AutoSize = true;
-            this.Lbl_Nome.Location = new System.Drawing.Point(111, 134);
+            this.Lbl_Nome.BackColor = System.Drawing.Color.Transparent;
+            this.Lbl_Nome.Location = new System.Drawing.Point(150, 276);
             this.Lbl_Nome.Name = "Lbl_Nome";
             this.Lbl_Nome.Size = new System.Drawing.Size(35, 13);
             this.Lbl_Nome.TabIndex = 0;
@@ -60,7 +74,8 @@
             // Lbl_Sobrenome
             // 
             this.Lbl_Sobrenome.AutoSize = true;
-            this.Lbl_Sobrenome.Location = new System.Drawing.Point(111, 159);
+            this.Lbl_Sobrenome.BackColor = System.Drawing.Color.Transparent;
+            this.Lbl_Sobrenome.Location = new System.Drawing.Point(150, 301);
             this.Lbl_Sobrenome.Name = "Lbl_Sobrenome";
             this.Lbl_Sobrenome.Size = new System.Drawing.Size(61, 13);
             this.Lbl_Sobrenome.TabIndex = 1;
@@ -69,7 +84,8 @@
             // Lbl_Idade
             // 
             this.Lbl_Idade.AutoSize = true;
-            this.Lbl_Idade.Location = new System.Drawing.Point(111, 186);
+            this.Lbl_Idade.BackColor = System.Drawing.Color.Transparent;
+            this.Lbl_Idade.Location = new System.Drawing.Point(150, 328);
             this.Lbl_Idade.Name = "Lbl_Idade";
             this.Lbl_Idade.Size = new System.Drawing.Size(34, 13);
             this.Lbl_Idade.TabIndex = 2;
@@ -78,16 +94,19 @@
             // Lbl_Bairro
             // 
             this.Lbl_Bairro.AutoSize = true;
-            this.Lbl_Bairro.Location = new System.Drawing.Point(111, 214);
+            this.Lbl_Bairro.BackColor = System.Drawing.Color.Transparent;
+            this.Lbl_Bairro.Location = new System.Drawing.Point(150, 356);
             this.Lbl_Bairro.Name = "Lbl_Bairro";
             this.Lbl_Bairro.Size = new System.Drawing.Size(34, 13);
             this.Lbl_Bairro.TabIndex = 3;
             this.Lbl_Bairro.Text = "Bairro";
+            this.Lbl_Bairro.Click += new System.EventHandler(this.Lbl_Bairro_Click);
             // 
             // Lbl_Celular
             // 
             this.Lbl_Celular.AutoSize = true;
-            this.Lbl_Celular.Location = new System.Drawing.Point(111, 242);
+            this.Lbl_Celular.BackColor = System.Drawing.Color.Transparent;
+            this.Lbl_Celular.Location = new System.Drawing.Point(150, 384);
             this.Lbl_Celular.Name = "Lbl_Celular";
             this.Lbl_Celular.Size = new System.Drawing.Size(39, 13);
             this.Lbl_Celular.TabIndex = 4;
@@ -96,7 +115,8 @@
             // Lbl_Conf_dados
             // 
             this.Lbl_Conf_dados.AutoSize = true;
-            this.Lbl_Conf_dados.Location = new System.Drawing.Point(111, 270);
+            this.Lbl_Conf_dados.BackColor = System.Drawing.Color.Transparent;
+            this.Lbl_Conf_dados.Location = new System.Drawing.Point(150, 457);
             this.Lbl_Conf_dados.Name = "Lbl_Conf_dados";
             this.Lbl_Conf_dados.Size = new System.Drawing.Size(115, 13);
             this.Lbl_Conf_dados.TabIndex = 5;
@@ -104,100 +124,224 @@
             // 
             // Txt_Nome
             // 
-            this.Txt_Nome.Location = new System.Drawing.Point(243, 127);
+            this.Txt_Nome.Location = new System.Drawing.Point(282, 269);
             this.Txt_Nome.Name = "Txt_Nome";
             this.Txt_Nome.Size = new System.Drawing.Size(279, 20);
             this.Txt_Nome.TabIndex = 6;
             // 
             // Txt_Sobrenome
             // 
-            this.Txt_Sobrenome.Location = new System.Drawing.Point(243, 152);
+            this.Txt_Sobrenome.Location = new System.Drawing.Point(282, 294);
             this.Txt_Sobrenome.Name = "Txt_Sobrenome";
             this.Txt_Sobrenome.Size = new System.Drawing.Size(279, 20);
             this.Txt_Sobrenome.TabIndex = 7;
             // 
             // Txt_Idade
             // 
-            this.Txt_Idade.Location = new System.Drawing.Point(243, 179);
+            this.Txt_Idade.Location = new System.Drawing.Point(282, 321);
             this.Txt_Idade.Name = "Txt_Idade";
-            this.Txt_Idade.Size = new System.Drawing.Size(279, 20);
+            this.Txt_Idade.Size = new System.Drawing.Size(84, 20);
             this.Txt_Idade.TabIndex = 8;
             // 
             // Txt_Bairro
             // 
-            this.Txt_Bairro.Location = new System.Drawing.Point(243, 211);
+            this.Txt_Bairro.Location = new System.Drawing.Point(282, 353);
             this.Txt_Bairro.Name = "Txt_Bairro";
             this.Txt_Bairro.Size = new System.Drawing.Size(279, 20);
             this.Txt_Bairro.TabIndex = 9;
             // 
-            // Txt_Cellular
+            // Txt_Celular
             // 
-            this.Txt_Cellular.Location = new System.Drawing.Point(243, 235);
-            this.Txt_Cellular.Name = "Txt_Cellular";
-            this.Txt_Cellular.Size = new System.Drawing.Size(279, 20);
-            this.Txt_Cellular.TabIndex = 10;
+            this.Txt_Celular.Location = new System.Drawing.Point(282, 377);
+            this.Txt_Celular.Name = "Txt_Celular";
+            this.Txt_Celular.Size = new System.Drawing.Size(168, 20);
+            this.Txt_Celular.TabIndex = 10;
             // 
-            // Txt_Conf_Dados
+            // Txt_Email
             // 
-            this.Txt_Conf_Dados.Location = new System.Drawing.Point(243, 263);
-            this.Txt_Conf_Dados.Name = "Txt_Conf_Dados";
-            this.Txt_Conf_Dados.Size = new System.Drawing.Size(279, 20);
-            this.Txt_Conf_Dados.TabIndex = 11;
+            this.Txt_Email.Location = new System.Drawing.Point(282, 403);
+            this.Txt_Email.Name = "Txt_Email";
+            this.Txt_Email.Size = new System.Drawing.Size(279, 20);
+            this.Txt_Email.TabIndex = 11;
             // 
-            // button1
+            // Btn_Nome
             // 
-            this.button1.Location = new System.Drawing.Point(584, 129);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Btn_Nome.BackColor = System.Drawing.Color.Transparent;
+            this.Btn_Nome.Location = new System.Drawing.Point(576, 266);
+            this.Btn_Nome.Name = "Btn_Nome";
+            this.Btn_Nome.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Nome.TabIndex = 12;
+            this.Btn_Nome.Text = "Nome";
+            this.Btn_Nome.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // Btn_Sobrenome
             // 
-            this.button2.Location = new System.Drawing.Point(584, 154);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Btn_Sobrenome.BackColor = System.Drawing.Color.Transparent;
+            this.Btn_Sobrenome.Location = new System.Drawing.Point(576, 291);
+            this.Btn_Sobrenome.Name = "Btn_Sobrenome";
+            this.Btn_Sobrenome.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Sobrenome.TabIndex = 13;
+            this.Btn_Sobrenome.Text = "Sobrenome";
+            this.Btn_Sobrenome.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // Btn_Idade
             // 
-            this.button3.Location = new System.Drawing.Point(584, 181);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Btn_Idade.BackColor = System.Drawing.Color.Transparent;
+            this.Btn_Idade.Location = new System.Drawing.Point(576, 318);
+            this.Btn_Idade.Name = "Btn_Idade";
+            this.Btn_Idade.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Idade.TabIndex = 14;
+            this.Btn_Idade.Text = "Idade";
+            this.Btn_Idade.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // Btn_Bairro
             // 
-            this.button4.Location = new System.Drawing.Point(584, 208);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 15;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.Btn_Bairro.BackColor = System.Drawing.Color.Transparent;
+            this.Btn_Bairro.Location = new System.Drawing.Point(576, 350);
+            this.Btn_Bairro.Name = "Btn_Bairro";
+            this.Btn_Bairro.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Bairro.TabIndex = 15;
+            this.Btn_Bairro.Text = "Bairro";
+            this.Btn_Bairro.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // Btn_Celular
             // 
-            this.button5.Location = new System.Drawing.Point(584, 232);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 16;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.Btn_Celular.BackColor = System.Drawing.Color.Transparent;
+            this.Btn_Celular.Location = new System.Drawing.Point(576, 379);
+            this.Btn_Celular.Name = "Btn_Celular";
+            this.Btn_Celular.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Celular.TabIndex = 16;
+            this.Btn_Celular.Text = "Celular";
+            this.Btn_Celular.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // Btn_D_Completos
             // 
-            this.button6.Location = new System.Drawing.Point(584, 260);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 52);
-            this.button6.TabIndex = 17;
-            this.button6.Text = "Dados Conpletos";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.Btn_D_Completos.BackColor = System.Drawing.Color.Transparent;
+            this.Btn_D_Completos.Location = new System.Drawing.Point(576, 437);
+            this.Btn_D_Completos.Name = "Btn_D_Completos";
+            this.Btn_D_Completos.Size = new System.Drawing.Size(75, 52);
+            this.Btn_D_Completos.TabIndex = 17;
+            this.Btn_D_Completos.Text = "Dados Completos";
+            this.Btn_D_Completos.UseVisualStyleBackColor = false;
+            this.Btn_D_Completos.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // Lbl_Cadastro_Pessoal
+            // 
+            this.Lbl_Cadastro_Pessoal.AutoSize = true;
+            this.Lbl_Cadastro_Pessoal.Location = new System.Drawing.Point(361, 241);
+            this.Lbl_Cadastro_Pessoal.Name = "Lbl_Cadastro_Pessoal";
+            this.Lbl_Cadastro_Pessoal.Size = new System.Drawing.Size(89, 13);
+            this.Lbl_Cadastro_Pessoal.TabIndex = 18;
+            this.Lbl_Cadastro_Pessoal.Text = "Cadastro Pessoal";
+            // 
+            // Grp_Temas
+            // 
+            this.Grp_Temas.BackColor = System.Drawing.Color.Transparent;
+            this.Grp_Temas.Controls.Add(this.Rad_Tema3);
+            this.Grp_Temas.Controls.Add(this.Rad_Tema2);
+            this.Grp_Temas.Controls.Add(this.Rad_tema1);
+            this.Grp_Temas.Location = new System.Drawing.Point(153, 25);
+            this.Grp_Temas.Name = "Grp_Temas";
+            this.Grp_Temas.Size = new System.Drawing.Size(498, 56);
+            this.Grp_Temas.TabIndex = 19;
+            this.Grp_Temas.TabStop = false;
+            this.Grp_Temas.Text = "Temas";
+            this.Grp_Temas.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // Rad_tema1
+            // 
+            this.Rad_tema1.AutoSize = true;
+            this.Rad_tema1.Location = new System.Drawing.Point(83, 19);
+            this.Rad_tema1.Name = "Rad_tema1";
+            this.Rad_tema1.Size = new System.Drawing.Size(61, 17);
+            this.Rad_tema1.TabIndex = 0;
+            this.Rad_tema1.TabStop = true;
+            this.Rad_tema1.Text = "Tema 1";
+            this.Rad_tema1.UseVisualStyleBackColor = true;
+            this.Rad_tema1.CheckedChanged += new System.EventHandler(this.Rad_tema1_CheckedChanged);
+            // 
+            // Rad_Tema2
+            // 
+            this.Rad_Tema2.AutoSize = true;
+            this.Rad_Tema2.Location = new System.Drawing.Point(211, 19);
+            this.Rad_Tema2.Name = "Rad_Tema2";
+            this.Rad_Tema2.Size = new System.Drawing.Size(61, 17);
+            this.Rad_Tema2.TabIndex = 1;
+            this.Rad_Tema2.TabStop = true;
+            this.Rad_Tema2.Text = "Tema 2";
+            this.Rad_Tema2.UseVisualStyleBackColor = true;
+            this.Rad_Tema2.CheckedChanged += new System.EventHandler(this.Rad_Tema2_CheckedChanged);
+            // 
+            // Rad_Tema3
+            // 
+            this.Rad_Tema3.AutoSize = true;
+            this.Rad_Tema3.Location = new System.Drawing.Point(347, 19);
+            this.Rad_Tema3.Name = "Rad_Tema3";
+            this.Rad_Tema3.Size = new System.Drawing.Size(61, 17);
+            this.Rad_Tema3.TabIndex = 2;
+            this.Rad_Tema3.TabStop = true;
+            this.Rad_Tema3.Text = "Tema 3";
+            this.Rad_Tema3.UseVisualStyleBackColor = true;
+            this.Rad_Tema3.CheckedChanged += new System.EventHandler(this.Rad_Tema3_CheckedChanged);
+            // 
+            // Btn_Ativar
+            // 
+            this.Btn_Ativar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.Btn_Ativar.Location = new System.Drawing.Point(163, 150);
+            this.Btn_Ativar.Name = "Btn_Ativar";
+            this.Btn_Ativar.Size = new System.Drawing.Size(121, 47);
+            this.Btn_Ativar.TabIndex = 20;
+            this.Btn_Ativar.Text = "Ativar";
+            this.Btn_Ativar.UseVisualStyleBackColor = false;
+            // 
+            // Btn_Deastivar
+            // 
+            this.Btn_Deastivar.BackColor = System.Drawing.Color.IndianRed;
+            this.Btn_Deastivar.Location = new System.Drawing.Point(340, 150);
+            this.Btn_Deastivar.Name = "Btn_Deastivar";
+            this.Btn_Deastivar.Size = new System.Drawing.Size(121, 47);
+            this.Btn_Deastivar.TabIndex = 21;
+            this.Btn_Deastivar.Text = "Desativar";
+            this.Btn_Deastivar.UseVisualStyleBackColor = false;
+            // 
+            // Btn_Limpar
+            // 
+            this.Btn_Limpar.BackColor = System.Drawing.SystemColors.Window;
+            this.Btn_Limpar.Location = new System.Drawing.Point(518, 150);
+            this.Btn_Limpar.Name = "Btn_Limpar";
+            this.Btn_Limpar.Size = new System.Drawing.Size(121, 47);
+            this.Btn_Limpar.TabIndex = 22;
+            this.Btn_Limpar.Text = "Limpar";
+            this.Btn_Limpar.UseVisualStyleBackColor = false;
+            // 
+            // Lbl_Email
+            // 
+            this.Lbl_Email.AutoSize = true;
+            this.Lbl_Email.BackColor = System.Drawing.Color.Transparent;
+            this.Lbl_Email.Location = new System.Drawing.Point(150, 410);
+            this.Lbl_Email.Name = "Lbl_Email";
+            this.Lbl_Email.Size = new System.Drawing.Size(32, 13);
+            this.Lbl_Email.TabIndex = 24;
+            this.Lbl_Email.Text = "Email";
+            // 
+            // btn_Email
+            // 
+            this.btn_Email.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Email.Location = new System.Drawing.Point(576, 405);
+            this.btn_Email.Name = "btn_Email";
+            this.btn_Email.Size = new System.Drawing.Size(75, 23);
+            this.btn_Email.TabIndex = 25;
+            this.btn_Email.Text = "Email";
+            this.btn_Email.UseVisualStyleBackColor = false;
+            // 
+            // Lbl_Resultado
+            // 
+            this.Lbl_Resultado.AutoSize = true;
+            this.Lbl_Resultado.Location = new System.Drawing.Point(150, 513);
+            this.Lbl_Resultado.Name = "Lbl_Resultado";
+            this.Lbl_Resultado.Size = new System.Drawing.Size(55, 13);
+            this.Lbl_Resultado.TabIndex = 26;
+            this.Lbl_Resultado.Text = "Resultado";
             // 
             // Frm_cadastro
             // 
@@ -205,15 +349,23 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Cadastro_2.Properties.Resources.asian_business_woman_manager_analyzing_datum_charts_typing_computer_making_notes_documents_table_office_vintage_color_selective_focus_business_concept;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.Txt_Conf_Dados);
-            this.Controls.Add(this.Txt_Cellular);
+            this.ClientSize = new System.Drawing.Size(859, 644);
+            this.Controls.Add(this.Lbl_Resultado);
+            this.Controls.Add(this.btn_Email);
+            this.Controls.Add(this.Lbl_Email);
+            this.Controls.Add(this.Btn_Limpar);
+            this.Controls.Add(this.Btn_Deastivar);
+            this.Controls.Add(this.Btn_Ativar);
+            this.Controls.Add(this.Grp_Temas);
+            this.Controls.Add(this.Lbl_Cadastro_Pessoal);
+            this.Controls.Add(this.Btn_D_Completos);
+            this.Controls.Add(this.Btn_Celular);
+            this.Controls.Add(this.Btn_Bairro);
+            this.Controls.Add(this.Btn_Idade);
+            this.Controls.Add(this.Btn_Sobrenome);
+            this.Controls.Add(this.Btn_Nome);
+            this.Controls.Add(this.Txt_Email);
+            this.Controls.Add(this.Txt_Celular);
             this.Controls.Add(this.Txt_Bairro);
             this.Controls.Add(this.Txt_Idade);
             this.Controls.Add(this.Txt_Sobrenome);
@@ -225,9 +377,12 @@
             this.Controls.Add(this.Lbl_Sobrenome);
             this.Controls.Add(this.Lbl_Nome);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Frm_cadastro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro";
+            this.Grp_Temas.ResumeLayout(false);
+            this.Grp_Temas.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -245,14 +400,25 @@
         private System.Windows.Forms.TextBox Txt_Sobrenome;
         private System.Windows.Forms.TextBox Txt_Idade;
         private System.Windows.Forms.TextBox Txt_Bairro;
-        private System.Windows.Forms.TextBox Txt_Cellular;
-        private System.Windows.Forms.TextBox Txt_Conf_Dados;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.TextBox Txt_Celular;
+        private System.Windows.Forms.TextBox Txt_Email;
+        private System.Windows.Forms.Button Btn_Nome;
+        private System.Windows.Forms.Button Btn_Sobrenome;
+        private System.Windows.Forms.Button Btn_Idade;
+        private System.Windows.Forms.Button Btn_Bairro;
+        private System.Windows.Forms.Button Btn_Celular;
+        private System.Windows.Forms.Button Btn_D_Completos;
+        private System.Windows.Forms.Label Lbl_Cadastro_Pessoal;
+        private System.Windows.Forms.GroupBox Grp_Temas;
+        private System.Windows.Forms.RadioButton Rad_Tema3;
+        private System.Windows.Forms.RadioButton Rad_Tema2;
+        private System.Windows.Forms.RadioButton Rad_tema1;
+        private System.Windows.Forms.Button Btn_Ativar;
+        private System.Windows.Forms.Button Btn_Deastivar;
+        private System.Windows.Forms.Button Btn_Limpar;
+        private System.Windows.Forms.Label Lbl_Email;
+        private System.Windows.Forms.Button btn_Email;
+        private System.Windows.Forms.Label Lbl_Resultado;
     }
 }
 
