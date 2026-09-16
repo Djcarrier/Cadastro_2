@@ -19,3 +19,13 @@ C:\Users\DB\Desktop\Cadastro_2\obj\Debug\Cadastro_2.csproj.GenerateResource.cach
 C:\Users\DB\Desktop\Cadastro_2\obj\Debug\Cadastro_2.csproj.CoreCompileInputs.cache
 C:\Users\DB\Desktop\Cadastro_2\obj\Debug\Cadastro_2.exe
 C:\Users\DB\Desktop\Cadastro_2\obj\Debug\Cadastro_2.pdb
+C:\Users\DB\Documents\GitHub\Cadastro_2\obj\Debug\Cadastro_2.csproj.AssemblyReference.cache
+C:\Users\DB\Documents\GitHub\Cadastro_2\obj\Debug\Cadastro_2.Frm_cadastro.resources
+C:\Users\DB\Documents\GitHub\Cadastro_2\obj\Debug\Cadastro_2.Properties.Resources.resources
+C:\Users\DB\Documents\GitHub\Cadastro_2\obj\Debug\Cadastro_2.csproj.GenerateResource.cache
+C:\Users\DB\Documents\GitHub\Cadastro_2\obj\Debug\Cadastro_2.csproj.CoreCompileInputs.cache
+C:\Users\DB\Documents\GitHub\Cadastro_2\obj\Debug\Cadastro_2.exe
+C:\Users\DB\Documents\GitHub\Cadastro_2\obj\Debug\Cadastro_2.pdb
+C:\Users\DB\Documents\GitHub\Cadastro_2\bin\Debug\Cadastro_2.exe.config
+C:\Users\DB\Documents\GitHub\Cadastro_2\bin\Debug\Cadastro_2.exe
+C:\Users\DB\Documents\GitHub\Cadastro_2\bin\Debug\Cadastro_2.pdb

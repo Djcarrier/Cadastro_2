@@ -49,9 +49,9 @@
             this.Btn_D_Completos = new System.Windows.Forms.Button();
             this.Lbl_Cadastro_Pessoal = new System.Windows.Forms.Label();
             this.Grp_Temas = new System.Windows.Forms.GroupBox();
-            this.Rad_tema1 = new System.Windows.Forms.RadioButton();
-            this.Rad_Tema2 = new System.Windows.Forms.RadioButton();
             this.Rad_Tema3 = new System.Windows.Forms.RadioButton();
+            this.Rad_Tema2 = new System.Windows.Forms.RadioButton();
+            this.Rad_tema1 = new System.Windows.Forms.RadioButton();
             this.Btn_Ativar = new System.Windows.Forms.Button();
             this.Btn_Deastivar = new System.Windows.Forms.Button();
             this.Btn_Limpar = new System.Windows.Forms.Button();
@@ -173,6 +173,7 @@
             this.Btn_Nome.TabIndex = 12;
             this.Btn_Nome.Text = "Nome";
             this.Btn_Nome.UseVisualStyleBackColor = false;
+            this.Btn_Nome.Click += new System.EventHandler(this.Btn_Nome_Click);
             // 
             // Btn_Sobrenome
             // 
@@ -183,6 +184,7 @@
             this.Btn_Sobrenome.TabIndex = 13;
             this.Btn_Sobrenome.Text = "Sobrenome";
             this.Btn_Sobrenome.UseVisualStyleBackColor = false;
+            this.Btn_Sobrenome.Click += new System.EventHandler(this.Btn_Sobrenome_Click);
             // 
             // Btn_Idade
             // 
@@ -193,6 +195,7 @@
             this.Btn_Idade.TabIndex = 14;
             this.Btn_Idade.Text = "Idade";
             this.Btn_Idade.UseVisualStyleBackColor = false;
+            this.Btn_Idade.Click += new System.EventHandler(this.Btn_Idade_Click);
             // 
             // Btn_Bairro
             // 
@@ -203,6 +206,7 @@
             this.Btn_Bairro.TabIndex = 15;
             this.Btn_Bairro.Text = "Bairro";
             this.Btn_Bairro.UseVisualStyleBackColor = false;
+            this.Btn_Bairro.Click += new System.EventHandler(this.Btn_Bairro_Click);
             // 
             // Btn_Celular
             // 
@@ -213,6 +217,7 @@
             this.Btn_Celular.TabIndex = 16;
             this.Btn_Celular.Text = "Celular";
             this.Btn_Celular.UseVisualStyleBackColor = false;
+            this.Btn_Celular.Click += new System.EventHandler(this.Btn_Celular_Click);
             // 
             // Btn_D_Completos
             // 
@@ -228,6 +233,7 @@
             // Lbl_Cadastro_Pessoal
             // 
             this.Lbl_Cadastro_Pessoal.AutoSize = true;
+            this.Lbl_Cadastro_Pessoal.BackColor = System.Drawing.Color.Transparent;
             this.Lbl_Cadastro_Pessoal.Location = new System.Drawing.Point(361, 241);
             this.Lbl_Cadastro_Pessoal.Name = "Lbl_Cadastro_Pessoal";
             this.Lbl_Cadastro_Pessoal.Size = new System.Drawing.Size(89, 13);
@@ -248,17 +254,17 @@
             this.Grp_Temas.Text = "Temas";
             this.Grp_Temas.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // Rad_tema1
+            // Rad_Tema3
             // 
-            this.Rad_tema1.AutoSize = true;
-            this.Rad_tema1.Location = new System.Drawing.Point(83, 19);
-            this.Rad_tema1.Name = "Rad_tema1";
-            this.Rad_tema1.Size = new System.Drawing.Size(61, 17);
-            this.Rad_tema1.TabIndex = 0;
-            this.Rad_tema1.TabStop = true;
-            this.Rad_tema1.Text = "Tema 1";
-            this.Rad_tema1.UseVisualStyleBackColor = true;
-            this.Rad_tema1.CheckedChanged += new System.EventHandler(this.Rad_tema1_CheckedChanged);
+            this.Rad_Tema3.AutoSize = true;
+            this.Rad_Tema3.Location = new System.Drawing.Point(347, 19);
+            this.Rad_Tema3.Name = "Rad_Tema3";
+            this.Rad_Tema3.Size = new System.Drawing.Size(61, 17);
+            this.Rad_Tema3.TabIndex = 2;
+            this.Rad_Tema3.TabStop = true;
+            this.Rad_Tema3.Text = "Tema 3";
+            this.Rad_Tema3.UseVisualStyleBackColor = true;
+            this.Rad_Tema3.CheckedChanged += new System.EventHandler(this.Rad_Tema3_CheckedChanged);
             // 
             // Rad_Tema2
             // 
@@ -272,17 +278,17 @@
             this.Rad_Tema2.UseVisualStyleBackColor = true;
             this.Rad_Tema2.CheckedChanged += new System.EventHandler(this.Rad_Tema2_CheckedChanged);
             // 
-            // Rad_Tema3
+            // Rad_tema1
             // 
-            this.Rad_Tema3.AutoSize = true;
-            this.Rad_Tema3.Location = new System.Drawing.Point(347, 19);
-            this.Rad_Tema3.Name = "Rad_Tema3";
-            this.Rad_Tema3.Size = new System.Drawing.Size(61, 17);
-            this.Rad_Tema3.TabIndex = 2;
-            this.Rad_Tema3.TabStop = true;
-            this.Rad_Tema3.Text = "Tema 3";
-            this.Rad_Tema3.UseVisualStyleBackColor = true;
-            this.Rad_Tema3.CheckedChanged += new System.EventHandler(this.Rad_Tema3_CheckedChanged);
+            this.Rad_tema1.AutoSize = true;
+            this.Rad_tema1.Location = new System.Drawing.Point(83, 19);
+            this.Rad_tema1.Name = "Rad_tema1";
+            this.Rad_tema1.Size = new System.Drawing.Size(61, 17);
+            this.Rad_tema1.TabIndex = 0;
+            this.Rad_tema1.TabStop = true;
+            this.Rad_tema1.Text = "Tema 1";
+            this.Rad_tema1.UseVisualStyleBackColor = true;
+            this.Rad_tema1.CheckedChanged += new System.EventHandler(this.Rad_tema1_CheckedChanged);
             // 
             // Btn_Ativar
             // 
@@ -333,6 +339,7 @@
             this.btn_Email.TabIndex = 25;
             this.btn_Email.Text = "Email";
             this.btn_Email.UseVisualStyleBackColor = false;
+            this.btn_Email.Click += new System.EventHandler(this.btn_Email_Click);
             // 
             // Lbl_Resultado
             // 
