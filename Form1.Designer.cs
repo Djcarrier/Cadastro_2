@@ -319,6 +319,7 @@
             this.Btn_Limpar.TabIndex = 22;
             this.Btn_Limpar.Text = "Limpar";
             this.Btn_Limpar.UseVisualStyleBackColor = false;
+            this.Btn_Limpar.Click += new System.EventHandler(this.Btn_Limpar_Click);
             // 
             // Lbl_Email
             // 

@@ -29,3 +29,4 @@ C:\Users\DB\Documents\GitHub\Cadastro_2\obj\Debug\Cadastro_2.pdb
 C:\Users\DB\Documents\GitHub\Cadastro_2\bin\Debug\Cadastro_2.exe.config
 C:\Users\DB\Documents\GitHub\Cadastro_2\bin\Debug\Cadastro_2.exe
 C:\Users\DB\Documents\GitHub\Cadastro_2\bin\Debug\Cadastro_2.pdb
+C:\Users\DB\Documents\GitHub\Cadastro_2\obj\Debug\Cadastro_2.exe.config
